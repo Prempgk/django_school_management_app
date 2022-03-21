@@ -349,7 +349,7 @@ def selectstaff(request):
                 det=mondaystafftimetable.objects.get(standard=standard)
                 det.monday1=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Monday' and period == '2nd Period':
             if action=='Save':
                 det=mondaystafftimetable.objects.get(standard=standard)
@@ -360,7 +360,7 @@ def selectstaff(request):
                 det=mondaystafftimetable.objects.get(standard=standard)
                 det.monday2=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Monday' and period == '3rd Period':
             if action == 'Save':
                 det = mondaystafftimetable.objects.get(standard=standard)
@@ -371,7 +371,7 @@ def selectstaff(request):
                 det = mondaystafftimetable.objects.get(standard=standard)
                 det.monday3 = staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Monday' and period == '4th Period':
             if action == 'Save':
                 det = mondaystafftimetable.objects.get(standard=standard)
@@ -382,7 +382,7 @@ def selectstaff(request):
                 det = mondaystafftimetable.objects.get(standard=standard)
                 det.monday4 = staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Monday' and period == '5th Period':
             if action == 'Save':
                 det = mondaystafftimetable.objects.get(standard=standard)
@@ -393,7 +393,7 @@ def selectstaff(request):
                 det = mondaystafftimetable.objects.get(standard=standard)
                 det.monday5 = staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Monday' and period == '6th Period':
             if action == 'Save':
                 det = mondaystafftimetable.objects.get(standard=standard)
@@ -404,7 +404,7 @@ def selectstaff(request):
                 det = mondaystafftimetable.objects.get(standard=standard)
                 det.monday6 = staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Monday' and period == '7th Period':
             if action == 'Save':
                 det = mondaystafftimetable.objects.get(standard=standard)
@@ -415,7 +415,7 @@ def selectstaff(request):
                 det = mondaystafftimetable.objects.get(standard=standard)
                 det.monday7 = staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Monday' and period == '8th Period':
             if action == 'Save':
                 det = mondaystafftimetable.objects.get(standard=standard)
@@ -426,7 +426,7 @@ def selectstaff(request):
                 det = mondaystafftimetable.objects.get(standard=standard)
                 det.monday8 = staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Tuesday' and period == '1st Period':
             if action=='Save':
                 det=tuesdaystafftimetable.objects.get(standard=standard)
@@ -437,7 +437,7 @@ def selectstaff(request):
                 det=tuesdaystafftimetable.objects.get(standard=standard)
                 det.tuesday1=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Tuesday' and period == '2nd Period':
             if action == 'Save':
                 det = tuesdaystafftimetable.objects.get(standard=standard)
@@ -448,7 +448,7 @@ def selectstaff(request):
                 det = tuesdaystafftimetable.objects.get(standard=standard)
                 det.tuesday2 = staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Tuesday' and period == '3rd Period':
             if action == 'Save':
                 det = tuesdaystafftimetable.objects.get(standard=standard)
@@ -459,7 +459,7 @@ def selectstaff(request):
                 det = tuesdaystafftimetable.objects.get(standard=standard)
                 det.tuesday3 = staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Tuesday' and period == '4th Period':
             if action == 'Save':
                 det = tuesdaystafftimetable.objects.get(standard=standard)
@@ -470,7 +470,7 @@ def selectstaff(request):
                 det = tuesdaystafftimetable.objects.get(standard=standard)
                 det.tuesday4 = staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Tuesday' and period == '5th Period':
             if action == 'Save':
                 det = tuesdaystafftimetable.objects.get(standard=standard)
@@ -481,7 +481,7 @@ def selectstaff(request):
                 det = tuesdaystafftimetable.objects.get(standard=standard)
                 det.tuesday5 = staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Tuesday' and period == '6th Period':
             if action == 'Save':
                 det = tuesdaystafftimetable.objects.get(standard=standard)
@@ -492,7 +492,7 @@ def selectstaff(request):
                 det = tuesdaystafftimetable.objects.get(standard=standard)
                 det.tuesday6 = staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Tuesday' and period == '7th Period':
             if action=='Save':
                 det=tuesdaystafftimetable.objects.get(standard=standard)
@@ -503,7 +503,7 @@ def selectstaff(request):
                 det=tuesdaystafftimetable.objects.get(standard=standard)
                 det.tuesday7=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Tuesday' and period == '8th Period':
             if action=='Save':
                 det=tuesdaystafftimetable.objects.get(standard=standard)
@@ -514,7 +514,7 @@ def selectstaff(request):
                 det=tuesdaystafftimetable.objects.get(standard=standard)
                 det.tuesday8=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Wednesday' and period == '1st Period':
             if action=='Save':
                 det=wednesdaystafftimetable.objects.get(standard=standard)
@@ -525,7 +525,7 @@ def selectstaff(request):
                 det=wednesdaystafftimetable.objects.get(standard=standard)
                 det.wednesday1 =staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Wednesday' and period == '2nd Period':
             if action=='Save':
                 det=wednesdaystafftimetable.objects.get(standard=standard)
@@ -536,7 +536,7 @@ def selectstaff(request):
                 det=wednesdaystafftimetable.objects.get(standard=standard)
                 det.wednesday2=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Wednesday' and period == '3rd Period':
             if action=='Save':
                 det=wednesdaystafftimetable.objects.get(standard=standard)
@@ -547,7 +547,7 @@ def selectstaff(request):
                 det=wednesdaystafftimetable.objects.get(standard=standard)
                 det.wednesday3=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Wednesday' and period == '4th Period':
             if action=='Save':
                 det=wednesdaystafftimetable.objects.get(standard=standard)
@@ -558,7 +558,7 @@ def selectstaff(request):
                 det=wednesdaystafftimetable.objects.get(standard=standard)
                 det.wednesday4=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Wednesday' and period == '5th Period':
             if action=='Save':
                 det=wednesdaystafftimetable.objects.get(standard=standard)
@@ -569,7 +569,7 @@ def selectstaff(request):
                 det=wednesdaystafftimetable.objects.get(standard=standard)
                 det.wednesday5=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Wednesday' and period == '6th Period':
             if action=='Save':
                 det=wednesdaystafftimetable.objects.get(standard=standard)
@@ -580,7 +580,7 @@ def selectstaff(request):
                 det=wednesdaystafftimetable.objects.get(standard=standard)
                 det.wednesday6=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Wednesday' and period == '7th Period':
             if action=='Save':
                 det=wednesdaystafftimetable.objects.get(standard=standard)
@@ -591,7 +591,7 @@ def selectstaff(request):
                 det=wednesdaystafftimetable.objects.get(standard=standard)
                 det.wednesday7=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Wednesday' and period == '8th Period':
             if action=='Save':
                 det=wednesdaystafftimetable.objects.get(standard=standard)
@@ -602,7 +602,7 @@ def selectstaff(request):
                 det=wednesdaystafftimetable.objects.get(standard=standard)
                 det.wednesday8=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Thursday' and period == '1st Period':
             if action=='Save':
                 det=thursdaystafftimetable.objects.get(standard=standard)
@@ -613,7 +613,7 @@ def selectstaff(request):
                 det=thursdaystafftimetable.objects.get(standard=standard)
                 det.thursday1=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Thursday' and period == '2nd Period':
             if action=='Save':
                 det=thursdaystafftimetable.objects.get(standard=standard)
@@ -624,7 +624,7 @@ def selectstaff(request):
                 det=thursdaystafftimetable.objects.get(standard=standard)
                 det.thursday2=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Thursday' and period == '3rd Period':
             if action=='Save':
                 det=thursdaystafftimetable.objects.get(standard=standard)
@@ -635,7 +635,7 @@ def selectstaff(request):
                 det=thursdaystafftimetable.objects.get(standard=standard)
                 det.thursday3=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Thursday' and period == '4th Period':
             if action=='Save':
                 det=thursdaystafftimetable.objects.get(standard=standard)
@@ -646,7 +646,7 @@ def selectstaff(request):
                 det=thursdaystafftimetable.objects.get(standard=standard)
                 det.thursday4=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Thursday' and period == '5th Period':
             if action=='Save':
                 det=thursdaystafftimetable.objects.get(standard=standard)
@@ -657,7 +657,7 @@ def selectstaff(request):
                 det=thursdaystafftimetable.objects.get(standard=standard)
                 det.thursday5=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Thursday' and period == '6th Period':
             if action=='Save':
                 det=thursdaystafftimetable.objects.get(standard=standard)
@@ -668,7 +668,7 @@ def selectstaff(request):
                 det=thursdaystafftimetable.objects.get(standard=standard)
                 det.thursday6=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Thursday' and period == '7th Period':
             if action=='Save':
                 det=thursdaystafftimetable.objects.get(standard=standard)
@@ -679,7 +679,7 @@ def selectstaff(request):
                 det=thursdaystafftimetable.objects.get(standard=standard)
                 det.thursday7=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Thursday' and period == '8th Period':
             if action=='Save':
                 det=thursdaystafftimetable.objects.get(standard=standard)
@@ -690,7 +690,7 @@ def selectstaff(request):
                 det=thursdaystafftimetable.objects.get(standard=standard)
                 det.thursday8=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Friday' and period == '1st Period':
             if action=='Save':
                 det=fridaystafftimetable.objects.get(standard=standard)
@@ -701,7 +701,7 @@ def selectstaff(request):
                 det=fridaystafftimetable.objects.get(standard=standard)
                 det.friday1=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/', viewstaffttable)
         if day == 'Friday' and period == '2nd Period':
             if action=='Save':
                 det=fridaystafftimetable.objects.get(standard=standard)
@@ -712,7 +712,7 @@ def selectstaff(request):
                 det=tuesdaystafftimetable.objects.get(standard=standard)
                 det.friday2=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Friday' and period == '3rd Period':
             if action=='Save':
                 det=fridaystafftimetable.objects.get(standard=standard)
@@ -723,7 +723,7 @@ def selectstaff(request):
                 det=tuesdaystafftimetable.objects.get(standard=standard)
                 det.friday3=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Friday' and period == '4th Period':
             if action=='Save':
                 det=fridaystafftimetable.objects.get(standard=standard)
@@ -734,7 +734,7 @@ def selectstaff(request):
                 det=tuesdaystafftimetable.objects.get(standard=standard)
                 det.friday4=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Friday' and period == '5th Period':
             if action=='Save':
                 det=fridaystafftimetable.objects.get(standard=standard)
@@ -745,7 +745,7 @@ def selectstaff(request):
                 det=tuesdaystafftimetable.objects.get(standard=standard)
                 det.friday5=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Friday' and period == '6th Period':
             if action=='Save':
                 det=fridaystafftimetable.objects.get(standard=standard)
@@ -756,7 +756,7 @@ def selectstaff(request):
                 det=tuesdaystafftimetable.objects.get(standard=standard)
                 det.friday6=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Friday' and period == '7th Period':
             if action=='Save':
                 det=fridaystafftimetable.objects.get(standard=standard)
@@ -767,7 +767,7 @@ def selectstaff(request):
                 det=tuesdaystafftimetable.objects.get(standard=standard)
                 det.friday7=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Friday' and period == '8th Period':
             if action=='Save':
                 det=fridaystafftimetable.objects.get(standard=standard)
@@ -778,7 +778,7 @@ def selectstaff(request):
                 det=tuesdaystafftimetable.objects.get(standard=standard)
                 det.friday8=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Saturday' and period == '1st Period':
             if action=='Save':
                 det=saturdaystafftimetable.objects.get(standard=standard)
@@ -789,7 +789,7 @@ def selectstaff(request):
                 det=saturdaystafftimetable.objects.get(standard=standard)
                 det.saturday1=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Saturday' and period == '2nd Period':
             if action=='Save':
                 det=saturdaystafftimetable.objects.get(standard=standard)
@@ -800,7 +800,7 @@ def selectstaff(request):
                 det=saturdaystafftimetable.objects.get(standard=standard)
                 det.saturday2=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Saturday' and period == '3rd Period':
             if action=='Save':
                 det=saturdaystafftimetable.objects.get(standard=standard)
@@ -811,7 +811,7 @@ def selectstaff(request):
                 det=saturdaystafftimetable.objects.get(standard=standard)
                 det.saturday3=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Saturday' and period == '4th Period':
             if action=='Save':
                 det=saturdaystafftimetable.objects.get(standard=standard)
@@ -822,7 +822,7 @@ def selectstaff(request):
                 det=saturdaystafftimetable.objects.get(standard=standard)
                 det.saturday4=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Saturday' and period == '5th Period':
             if action=='Save':
                 det=saturdaystafftimetable.objects.get(standard=standard)
@@ -833,7 +833,7 @@ def selectstaff(request):
                 det=saturdaystafftimetable.objects.get(standard=standard)
                 det.saturday5=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/', viewstaffttable)
         if day == 'Saturday' and period == '6th Period':
             if action=='Save':
                 det=saturdaystafftimetable.objects.get(standard=standard)
@@ -844,7 +844,7 @@ def selectstaff(request):
                 det=saturdaystafftimetable.objects.get(standard=standard)
                 det.saturday6=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Saturday' and period == '7th Period':
             if action=='Save':
                 det=saturdaystafftimetable.objects.get(standard=standard)
@@ -855,7 +855,7 @@ def selectstaff(request):
                 det=saturdaystafftimetable.objects.get(standard=standard)
                 det.saturday7=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
         if day == 'Saturday' and period == '8th Period':
             if action=='Save':
                 det=saturdaystafftimetable.objects.get(standard=standard)
@@ -866,9 +866,8 @@ def selectstaff(request):
                 det=saturdaystafftimetable.objects.get(standard=standard)
                 det.saturday8=staff
                 det.save()
-                return HttpResponse('Hi')
+                return redirect('/viewstaffttable/',viewstaffttable)
     return render(request,'selectstaff.html',{'a':a,'value':e})
-
 
 def addstaffttable(request):
     x = loggedinperson.objects.get(id=1)
