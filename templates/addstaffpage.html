@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addstaffdetails</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+{% load static %}
+<style>
+    body {background-color: skyblue;
+    }
+    h1 {
+    text-align:center;
+    font-style:oblique;
+    color:red;
+    font-family: "Times New Roman", Times, serif;
+    background-color: black;
+    }
+
+</style>
+<body>
+<h1>ADD STAFF DETAILS HERE</h1>
+<form method="post">
+    {% csrf_token %}
+
+    <table>
+        <tr>
+            <td>
+                <label style="font-family: -webkit-body;font-size: larger;"><b>STAFF NAME:</b></label>
+            </td>
+            <td>
+                <input type="text" placeholder="Enter staff name" name="staffname">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>QUALIFICATION:</b></label>
+            </td>
+            <td>
+                <input type="text" name="qualification" placeholder="Enter staff qualification">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>SPECIALIZATION:</b></label>
+            </td>
+            <td>
+                <select name="specialization">
+                    <option >-select-</option>
+                    <option value="Tamil Literature">Tamil Literature</option>
+                    <option value="English">English</option>
+                    <option value="Mathematics">Maths</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Zoology">Zoology</option>
+                    <option value="Botany">Physics</option>
+                    <option value="History">History</option>
+                    <option value="Geography">Geography</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Political Science">Political Science</option>
+                    <option value="Music">Music</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Physical Education">Physical Eduacation</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>WORK EXPERIENCE:</b></label>
+            </td>
+            <td>
+                <input type="number" name="experience" placeholder="Must be >=0">
+            </td>
+        </tr>
+        {%if values%}
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>SCHOOL NAME:</b></label>
+            </td>
+            <td>
+                <input name="school" value="{{values.School_name}}">
+            </td>
+        </tr>
+        {%endif%}
+        <tr>
+            <td>
+                 <label style="font-family:-webkit-body;font-size:larger;"><b>ROLES:</b></label>
+            </td>
+            <td>
+                <select name="role">
+                    <option>-select-</option>
+                    <option value="Principal">Principal</option>
+                    <option value="Vice Principal">Vice Principal</option>
+                    <option value="Teacher">Teacher</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>RESPONSIBILITIES:</b></label>
+            </td>
+            <td>
+                <input type="text" placeholder="Enter staff responsibilities" name="responsibilities">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>MOBILE NUMBER:</b></label>
+            </td>
+            <td>
+                <input type="text" placeholder="Enter staff mobile number" name="mobile number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                 <label style="font-family:-webkit-body;font-size:larger;" ><b>ADDRESS:</b></label>
+            </td>
+            <td>
+                <input type="text" name="address" placeholder="Enter staff address">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>DATE OF JOIN:</b></label>
+            </td>
+            <td>
+                <input type="date" name="joiningdate">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="update">
+            </td>
+        </tr>
+
+
+
+
+    </table>
+
+</form>
+
+</body>
+</html>

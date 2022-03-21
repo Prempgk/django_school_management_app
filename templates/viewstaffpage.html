@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Container details</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+{% load static %}
+<style>
+    body {background-color: skyblue;
+    }
+    h1 {
+    text-align:center;
+    font-style:oblique;
+    color:red;
+    font-family: "Times New Roman", Times, serif;
+    background-color: black;
+    }
+</style>
+<body>
+<h1>STAFF DETAILS</h1>
+<table>
+    <style>
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+
+      }
+    </style>
+    <tr style="font-style: italic;font-family: emoji;font-size:large;">
+        <th>Staff Name</th>
+        <th>Qualification</th>
+        <th>Specialization</th>
+        <th>Work Experience</th>
+        <th>School Name</th>
+        <th>Roles</th>
+        <th>Responsibilities</th>
+        <th>Mobile Number</th>
+        <th>Address</th>
+        <th>Joining Date</th>
+        <th>Action</th>
+    </tr>
+    {% for i in values %}
+    <tr style="text-align: center;font-family: cursive;font-size: large;">
+        <td>{{i.staffname}}</td>
+        <td>{{i.qualification}}</td>
+        <td>{{i.specialization}}</td>
+        <td>{{i.workexperience}}</td>
+        <td>{{i.schoolname}}</td>
+        <td>{{i.roles}}</td>
+        <td>{{i.responsibilities}}</td>
+        <td>{{i.mobilenumber}}</td>
+        <td>{{i.Address}}</td>
+        <td>{{i.joiningdate}}</td>
+        <td>
+            <a style="color:black" href="/edit/{{i.id}}">EDIT</a><br>
+            <a style="color:black" href="/delete/{{i.id}}">DELETE</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+
+
+</body>
+</html>

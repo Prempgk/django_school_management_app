@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>timetable</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+{%load static%}
+<body>
+<style>
+    body {background-color: skyblue;text-align:center;
+    }
+    h1 {
+    text-align:center;
+    font-style:oblique;
+    color:red;
+    font-family: "Times New Roman", Times, serif;
+    background-color: black;
+    }
+     th,
+    td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    table.center {
+    margin-left: auto;
+    margin-right: auto;
+    }
+</style>
+{%if head%}
+<h1>{{head.current_standard}} TIMETABLE DETAILS</h1>
+{%endif%}
+<table class="center">
+    <tr style="font-style: italic;font-family: emoji;font-size:x-large;">
+        <th>Period/Day</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+    </tr>
+    {% for i in values %}
+    <tr style="text-align: center;font-family: cursive;font-size: large;">
+        <td>{{i.period}}</td>
+        <td>{{i.Monday}}</td>
+        <td>{{i.Tuesday}}</td>
+        <td>{{i.Wednesday}}</td>
+        <td>{{i.Thursday}}</td>
+        <td>{{i.Friday}}</td>
+        <td>{{i.Saturday}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<div class="container">
+    <tr>
+        <a style="font-style: italic;font-family: emoji;font-size:x-large;" href="/addtimetable/"><b>EDIT</b></a><br>
+    </tr>
+
+</div>
+
+
+
+</body>
+</html>

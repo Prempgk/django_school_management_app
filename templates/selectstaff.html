@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>select staff</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+{%load static%}
+<body>
+<style>
+    h1 {
+    text-align:center;
+    font-style:oblique;
+    color:red;
+    font-family: "Times New Roman", Times, serif;
+    background-color: black;
+    }
+    button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 7px 10px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width:15%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+</style>
+<h1>SELECT STAFF</h1>
+
+<br>
+<br>
+<form method="post">
+{% csrf_token %}
+{%if a%}
+
+<div class="container" style="text-align:center;">
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>STANDARD:</b></label>
+            </td>
+            <td>{{a.standard}}</td>
+        </tr>
+    </div>
+<br>
+<br>
+    <div class="container" style="text-align:center;">
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>DAY:</b></label>
+            </td>
+            <td>{{a.day}}</td>
+        </tr>
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>PERIOD:</b></label>
+            </td>
+            <td>{{a.period}}</td>
+        </tr>
+    </div>
+<br>
+<br>
+    <div class="container" style="text-align:center;">
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>SUBJECT:</b></label>
+            </td>
+            <td>{{a.subject}}</td>
+        </tr>
+    </div>
+<br>
+<br>
+<div class="container" style="text-align:center;">
+    <tr>
+        <td>
+            <label style="font-family:-webkit-body;font-size:larger;"><b>STAFF LIST:</b></label>
+        </td>
+        {%for i in value%}
+        <td>
+            <select name="staffname">
+                <option value="{{i.staffname}}">{{i.staffname}}</option><br>
+            </select>
+        </td>
+        {%endfor%}
+    </tr>
+</div>
+
+
+<br>
+<br>
+
+<div class="container" style="text-align:center;">
+        <button type="submit" name="content" value="Save">Save</button>
+        <button type="submit" name="content" value="Finish">Finish</button>
+    </div>
+
+{%endif%}
+</form>
+
+</body>
+</html>

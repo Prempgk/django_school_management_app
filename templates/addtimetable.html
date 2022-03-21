@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add time table</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+{%load static%}
+<body>
+<style>
+    h1 {
+    text-align:center;
+    font-style:oblique;
+    color:red;
+    font-family: "Times New Roman", Times, serif;
+    background-color: black;
+    }
+    button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 7px 10px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width:15%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+</style>
+<h1>ADD CLASS TIME TABLE DETAILS</h1>
+<br>
+<br>
+<form method="post">
+    {%csrf_token%}
+    <div class="container" style="text-align:center;">
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>STANDARD:</b></label>
+            </td>
+            <td>
+                <select name="standard">
+                    <option>-select-</option>
+                    <option value="1st standard">1st standard</option>
+                    <option value="2nd standard">2nd standard</option>
+                    <option value="3rd standard">3rd standard</option>
+                    <option value="4th standard">4th standard</option>
+                    <option value="5th standard">5th standard</option>
+                    <option value="6th standard">6th standard</option>
+                    <option value="7th standard">7th standard</option>
+                    <option value="8th standard">8th standard</option>
+                    <option value="9th standard">9th standard</option>
+                    <option value="10th standard">10th standard</option>
+                    <option value="11th standard">11th standard</option>
+                    <option value="12th standard">12th standard</option>
+                </select>
+            </td>
+        </tr>
+    </div>
+<br>
+<br>
+    <div class="container" style="text-align:center;">
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>DAY:</b></label>
+            </td>
+            <td>
+                <select name="day">
+                    <option>-select-</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>PERIOD:</b></label>
+            </td>
+            <td>
+                <select name="period">
+                    <option value="1st Period">1st Period</option>
+                    <option value="2nd Period">2nd Period</option>
+                    <option value="3rd Period">3rd Period</option>
+                    <option value="4th Period">4th Period</option>
+                    <option value="5th Period">5th Period</option>
+                    <option value="6th Period">6th Period</option>
+                    <option value="7th Period">7th Period</option>
+                    <option value="8th Period">8th Period</option>
+                </select>
+            </td>
+        </tr>
+    </div>
+<br>
+<br>
+    <div class="container" style="text-align:center;">
+        <tr>
+            <td>
+                <label style="font-family:-webkit-body;font-size:larger;"><b>SUBJECT:</b></label>
+            </td>
+            <td>
+                <select name="subject">
+                    <option>-select-</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="English">English</option>
+                    <option value="Mathematics">Maths</option>
+                    <option value="Science">Science</option>
+                    <option value="Social Science">Social Science</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Zoology">Zoology</option>
+                    <option value="Botany">Physics</option>
+                    <option value="History">History</option>
+                    <option value="Geography">Geography</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Political Science">Political Science</option>
+                    <option value="Music">Music</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Physical Education">Physical Education</option>
+                </select>
+            </td>
+        </tr>
+    </div>
+    <br>
+    <br>
+    <div class="container" style="text-align:center;">
+        <button type="submit" name="content" value="Save">Save</button>
+        <button type="submit" name="content" value="Finish">Finish</button>
+    </div>
+</form>
+</body>
+</html>

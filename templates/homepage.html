@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="UTF-8">
+    <title>Prem school management apk</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+{% load static %}
+
+<body>
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display: none;background-color: rgb(0, 150, 136) !important;" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <form method='post'>
+    {% csrf_token %}
+    <tr>
+        <input class="w3-bar-item w3-button" type="submit" value="Admin Login" name="content">
+    </tr>
+    <tr>
+        <input class="w3-bar-item w3-button" type="submit" value="Admin Register" name="content">
+    </tr>
+        <tr>
+            <input class="w3-bar-item w3-button" type="submit" value="Staff Login" name="content">
+        </tr>
+</form>
+</div>
+
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()" style="display:block;background-color: rgb(0, 150, 136) !important;">☰</button>
+</div>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<div class="container">
+    <img src="{%static 'images/img/R.jpg'%}" alt="Student" style="width:100%" class="background">
+</div>
+<footer>
+<div class="container" style="font-size: large;font-style: oblique;font-family: auto;font-weight: bold;">
+    <p>TO CREATE A BEST WEB APPLICATIONS AND WEBSITES,PLEASE CONTACT UC @ MAIL ID:premiyadr@gmail.com</p>
+</div>
+
+</footer>
+</body>
+</html>
